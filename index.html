@@ -1,10 +1,13 @@
 <h1>Hey this is a test of a website</h1>
 
+
+<p id="demo"></p>
+
 <script>
 var greetings = ["Hi!", "Welcome!", "Bienvenidos!"];
 
 var mes = greetings[(int)(Math.random() * 3)];
-document.write("<h1>" + mes + "</h1>");
+document.getElementById("demo").innerHTML = mes;
   
 </script>
 
