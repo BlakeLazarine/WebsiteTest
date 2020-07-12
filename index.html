@@ -6,9 +6,10 @@
 <script>
 var greetings = ["Hi!", "Welcome!", "Bienvenidos!"];
 
-var mes = greetings[(int)(Math.random() * 3)];
+var idx = Math.floor(Math.random() * 3)
+var mes = greetings[idx];
 document.getElementById("demo").innerHTML = mes;
-  
+ 
 </script>
 
 <a href="file.txt">Download File</a>
