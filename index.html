@@ -1,17 +1,25 @@
-<h1>Hey this is a test of a website</h1>
-
+<!DOCTYPE html>
+<html>
+<body>
 
 <p id="demo"></p>
 
-<p><input type="text" size="5" id="textin"/></p>
-
+<h2>HTML Forms</h2>
 <script>
-var greetings = ["Hi!", "Welcome!", "Bienvenidos!"];
+function doFunction(){
+	var greetings = ["Hi!", "Welcome!", "Bienvenidos!"];
 
-var idx = Math.floor(Math.random() * 3)
-var mes = greetings[idx];
-document.getElementById("demo").innerHTML = mes;
- 
+    var idx = Math.floor(Math.random() * 3)
+    var mes = greetings[idx];
+    document.getElementById("demo").innerHTML = mes;
+}
 </script>
 
+<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+
 <a href="file.txt">Download File</a>
+
+</body>
+</html>
+
+
